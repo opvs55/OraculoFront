@@ -1,0 +1,56 @@
+/* src/styles/globals.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap');
+
+/* NOVO: Aplicamos as cores e fontes no elemento raiz da página */
+:root {
+  font-family: 'Lato', sans-serif;
+  background-color: #0D0C1D; /* Fundo principal escuro aplicado a TUDO */
+  color: #E0E0E0; /* Texto principal claro */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* O Body agora só se preocupa com o layout flex */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; 
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  color: #E1B382;
+  text-shadow: 0 0 5px rgba(225, 179, 130, 0.4);
+}
+
+a {
+  color: #C36E97;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #E0E0E0;
+}
